@@ -3220,4 +3220,118 @@ a.quest_list_box:hover h2 {
 }
 .f_less-budget .content .center .f_anchor {
   margin-top: 10px;
+  margin-bottom: 0;
+}
+.f_scenarios {
+  width: 1042px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 77px;
+  padding-top: 40px;
+  padding-bottom: 45px;
+  border: 3px solid #6E3C19;
+  border-radius: 6px;
+}
+.f_scenarios .title {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.f_scenarios .title h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.f_scenarios .content {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 58px;
+  padding-top: 0;
+}
+.f_scenarios .content .row:not(:first-child) {
+  margin-top: 25px;
+}
+.f_scenarios .content .row .col {
+  width: 460px;
+}
+.f_scenarios .content .row .col:first-child {
+  margin-right: 40px;
+}
+.f_scenarios .content .row .col p {
+  margin-top: 13px;
+  margin-bottom: 0;
+  line-height: 1.33rem;
+}
+.f_scenarios .content .row.text .col {
+  width: 300px;
+}
+.f_scenarios .content .row.text .col:not(:last-child) {
+  margin-right: 30px;
+}
+.f_what-you-get {
+  margin-top: 78px;
+}
+.f_what-you-get .title {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.f_what-you-get .title h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.f_what-you-get .title p {
+  margin-top: 32px;
+  width: 562px;
+  font-style: italic;
+  margin-bottom: 0;
+}
+.f_what-you-get .content {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 29px;
+  padding-top: 0;
+}
+.f_what-you-get .content .row:not(:first-child) {
+  margin-top: 24px;
+}
+.f_what-you-get .content .row .col {
+  width: 320px;
+}
+.f_what-you-get .content .row .col h3 {
+  width: 302px;
+  color: #ff8014;
+  font-weight: bold;
+}
+.f_what-you-get .content .row .col p {
+  width: 281px;
+  margin-top: 6px;
+  margin-bottom: 0;
+  line-height: 1.33rem;
+}
+.f_feedback_box {
+  zoom: 1;
+  margin-top: 110px;
+}
+.f_feedback_box:before,
+.f_feedback_box:after {
+  content: " ";
+  display: table;
+}
+.f_feedback_box:after {
+  clear: both;
+}
+.f_feedback_box h2 {
+  margin-left: 0;
+  color: #ffffff;
+}
+.f_feedback_box .f_feedback {
+  float: left;
+  width: 50%;
+}
+.f_feedback_box .f_feedback img {
+  border-radius: ;
 }
