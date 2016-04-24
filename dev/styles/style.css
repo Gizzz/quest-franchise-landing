@@ -3315,6 +3315,7 @@ a.quest_list_box:hover h2 {
 .f_feedback_box {
   zoom: 1;
   margin-top: 110px;
+  margin-bottom: 80px;
 }
 .f_feedback_box:before,
 .f_feedback_box:after {
@@ -3330,8 +3331,32 @@ a.quest_list_box:hover h2 {
 }
 .f_feedback_box .f_feedback {
   float: left;
+  margin-bottom: 0;
   width: 50%;
 }
 .f_feedback_box .f_feedback img {
-  border-radius: ;
+  display: inline-block;
+  border-radius: 50%;
+  width: 110px;
+  height: 104px;
+}
+.f_feedback_box .f_feedback .f_sign {
+  margin-top: 0;
+  padding-left: 126px;
+}
+.f_feedback_box .f_feedback h3 {
+  width: 291px;
+  padding-left: 126px;
+  font-family: "PT Sans", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 1.4rem;
+}
+.f_feedback_box .f_feedback .text {
+  margin-top: 20px;
+  width: 430px;
+  padding-left: 0;
+}
+.f_feedback_box .f_feedback:nth-of-type(2) .text {
+  position: relative;
+  top: 25px;
 }
