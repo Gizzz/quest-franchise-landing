@@ -3834,21 +3834,24 @@ a.quest_list_box:hover h2 {
     margin-top: 29px;
     padding-top: 0;
 
+    img {
+      width: 960px;
+      height: 350px;
+    }
+
     .row {
-      &:not(:first-child) {
+      &:not(:first-of-type) {
         margin-top: 55px;
       }
 
       .col {
-        width: 500px;
-
         &:first-child {
-          margin-right: 42px;
+          width: 477px;
         }
 
-        img {
-          width: 500px;
-          height: 284px;
+        &:last-child {
+          float: right;
+          width: 418px;
         }
 
         p {
@@ -3856,6 +3859,25 @@ a.quest_list_box:hover h2 {
           margin-bottom: 0;
           line-height: 1.33rem;
         }
+      }
+    }
+
+    h3 {
+      margin-top: 85px;
+      margin-right: auto;
+      margin-left: auto;
+      width: 723px;
+      font-family: "PT Serif", Georgia, Times, serif;
+      font-style: italic;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    .center {
+      text-align: center;
+
+      .f_anchor {
+        margin-top: 10px;
       }
     }
   }

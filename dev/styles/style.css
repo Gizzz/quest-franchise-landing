@@ -3186,21 +3186,38 @@ a.quest_list_box:hover h2 {
   margin-top: 29px;
   padding-top: 0;
 }
-.f_less-budget .content .row:not(:first-child) {
+.f_less-budget .content img {
+  width: 960px;
+  height: 350px;
+}
+.f_less-budget .content .row:not(:first-of-type) {
   margin-top: 55px;
 }
-.f_less-budget .content .row .col {
-  width: 500px;
-}
 .f_less-budget .content .row .col:first-child {
-  margin-right: 42px;
+  width: 477px;
 }
-.f_less-budget .content .row .col img {
-  width: 500px;
-  height: 284px;
+.f_less-budget .content .row .col:last-child {
+  float: right;
+  width: 418px;
 }
 .f_less-budget .content .row .col p {
   margin-top: 13px;
   margin-bottom: 0;
   line-height: 1.33rem;
+}
+.f_less-budget .content h3 {
+  margin-top: 85px;
+  margin-right: auto;
+  margin-left: auto;
+  width: 723px;
+  font-family: "PT Serif", Georgia, Times, serif;
+  font-style: italic;
+  text-align: center;
+  color: #ffffff;
+}
+.f_less-budget .content .center {
+  text-align: center;
+}
+.f_less-budget .content .center .f_anchor {
+  margin-top: 10px;
 }
