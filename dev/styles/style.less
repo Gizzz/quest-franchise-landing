@@ -3599,8 +3599,43 @@ a.quest_list_box:hover h2 {
 
 }
 
+// ---------------------------------------------------------------------------------
+// Bulat Khusainov's CSS part starts here
+// ---------------------------------------------------------------------------------
+
+// Clearfix
+//
+// For modern browsers
+// 1. The space content is one way to avoid an Opera bug when the
+//    contenteditable attribute is included anywhere else in the document.
+//    Otherwise it causes space to appear at the top and bottom of elements
+//    that are clearfixed.
+// 2. The use of `table` rather than `block` is only necessary if using
+//    `:before` to contain the top-margins of child elements.
+//
+// Source: http://nicolasgallagher.com/micro-clearfix-hack/
+
+.clearfix() {
+  &:before,
+  &:after {
+    content: " "; // 1
+    display: table; // 2
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+.row {
+  .clearfix();
+
+  .col {
+    float: left;
+  }
+}
+
 .f_jumbo {
-  background: url(../images/stock-vector-hot-air-balloon.png) no-repeat right 3.33rem top 50%;
+  background: url(../images/fran-abr_stock-vector-hot-air-balloon.png) no-repeat right 3.33rem top 50%;
   background-size: 272px 510px;
 
   .header {
@@ -3657,7 +3692,7 @@ a.quest_list_box:hover h2 {
 
   .image {
     height: 205px;
-    background: url(../images/bg-chicken.jpg) repeat-x 50% 50%;
+    background: url(../images/fran-abr_bg-chicken.jpg) repeat-x 50% 50%;
     background-size: 620px 205px;
   }
 
@@ -3688,12 +3723,139 @@ a.quest_list_box:hover h2 {
 
   .f_about {
     width: 100%;
+
+    h2 {
+      color: #ffffff;
+    }
+
+    p {
+      color: #cccccc;
+    }
   }
 
   ul {
     li {
-      &:first-child {
-        
+      position: relative;
+      display: block;
+      float: left;
+      width: 190px;
+      padding-right: 0;
+
+      span {
+        display: inline-block;
+      }
+
+      div {
+        position: relative;
+        left: 1px;
+        top: -6px;
+        display: inline-block;
+      }
+    }
+  }
+
+  .f_boss_box {
+    margin-top: 14px;
+    margin-bottom: 50px;
+
+    p {
+      margin-top: 13px;
+      text-align: left;
+    }
+  }
+}
+
+.f_experience_abroad {
+  .title {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+
+    h2 {
+      margin-bottom: 0;
+      color: #ffffff;
+      font-size: 2rem;
+    }
+  }
+
+  .content {
+    width: 1042px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 45px;
+    padding-top: 0;
+
+    .row {
+      &:not(:first-child) {
+        margin-top: 55px;
+      }
+
+      .col {
+        width: 500px;
+
+        &:first-child {
+          margin-right: 42px;
+        }
+
+        img {
+          width: 500px;
+          height: 284px;
+        }
+
+        p {
+          margin-top: 13px;
+          margin-bottom: 0;
+          line-height: 1.33rem;
+        }
+      }
+    }
+  }
+}
+
+.f_less-budget {
+  margin-top: 67px;
+
+  .title {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+
+    h2 {
+      margin-bottom: 0;
+      color: #ffffff;
+      font-size: 2rem;
+    }
+  }
+
+  .content {
+    width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 29px;
+    padding-top: 0;
+
+    .row {
+      &:not(:first-child) {
+        margin-top: 55px;
+      }
+
+      .col {
+        width: 500px;
+
+        &:first-child {
+          margin-right: 42px;
+        }
+
+        img {
+          width: 500px;
+          height: 284px;
+        }
+
+        p {
+          margin-top: 13px;
+          margin-bottom: 0;
+          line-height: 1.33rem;
+        }
       }
     }
   }

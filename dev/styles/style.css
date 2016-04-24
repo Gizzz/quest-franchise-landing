@@ -3016,8 +3016,22 @@ a.quest_list_box:hover h2 {
     margin: 0.5em 0 1em 0;
   }
 }
+.row {
+  zoom: 1;
+}
+.row:before,
+.row:after {
+  content: " ";
+  display: table;
+}
+.row:after {
+  clear: both;
+}
+.row .col {
+  float: left;
+}
 .f_jumbo {
-  background: url(../images/stock-vector-hot-air-balloon.png) no-repeat right 3.33rem top 50%;
+  background: url(../images/fran-abr_stock-vector-hot-air-balloon.png) no-repeat right 3.33rem top 50%;
   background-size: 272px 510px;
 }
 .f_jumbo .header {
@@ -3062,7 +3076,7 @@ a.quest_list_box:hover h2 {
 }
 .f_three_steps_box .image {
   height: 205px;
-  background: url(../images/bg-chicken.jpg) repeat-x 50% 50%;
+  background: url(../images/fran-abr_bg-chicken.jpg) repeat-x 50% 50%;
   background-size: 620px 205px;
 }
 .f_three_steps_box .steps {
@@ -3086,4 +3100,107 @@ a.quest_list_box:hover h2 {
 }
 .f_about_box .f_about {
   width: 100%;
+}
+.f_about_box .f_about h2 {
+  color: #ffffff;
+}
+.f_about_box .f_about p {
+  color: #cccccc;
+}
+.f_about_box ul li {
+  position: relative;
+  display: block;
+  float: left;
+  width: 190px;
+  padding-right: 0;
+}
+.f_about_box ul li span {
+  display: inline-block;
+}
+.f_about_box ul li div {
+  position: relative;
+  left: 1px;
+  top: -6px;
+  display: inline-block;
+}
+.f_about_box .f_boss_box {
+  margin-top: 14px;
+  margin-bottom: 50px;
+}
+.f_about_box .f_boss_box p {
+  margin-top: 13px;
+  text-align: left;
+}
+.f_experience_abroad .title {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.f_experience_abroad .title h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.f_experience_abroad .content {
+  width: 1042px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 45px;
+  padding-top: 0;
+}
+.f_experience_abroad .content .row:not(:first-child) {
+  margin-top: 55px;
+}
+.f_experience_abroad .content .row .col {
+  width: 500px;
+}
+.f_experience_abroad .content .row .col:first-child {
+  margin-right: 42px;
+}
+.f_experience_abroad .content .row .col img {
+  width: 500px;
+  height: 284px;
+}
+.f_experience_abroad .content .row .col p {
+  margin-top: 13px;
+  margin-bottom: 0;
+  line-height: 1.33rem;
+}
+.f_less-budget {
+  margin-top: 67px;
+}
+.f_less-budget .title {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.f_less-budget .title h2 {
+  margin-bottom: 0;
+  color: #ffffff;
+  font-size: 2rem;
+}
+.f_less-budget .content {
+  width: 960px;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 29px;
+  padding-top: 0;
+}
+.f_less-budget .content .row:not(:first-child) {
+  margin-top: 55px;
+}
+.f_less-budget .content .row .col {
+  width: 500px;
+}
+.f_less-budget .content .row .col:first-child {
+  margin-right: 42px;
+}
+.f_less-budget .content .row .col img {
+  width: 500px;
+  height: 284px;
+}
+.f_less-budget .content .row .col p {
+  margin-top: 13px;
+  margin-bottom: 0;
+  line-height: 1.33rem;
 }
