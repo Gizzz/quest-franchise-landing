@@ -3016,3 +3016,74 @@ a.quest_list_box:hover h2 {
     margin: 0.5em 0 1em 0;
   }
 }
+.f_jumbo {
+  background: url(../images/stock-vector-hot-air-balloon.png) no-repeat right 3.33rem top 50%;
+  background-size: 272px 510px;
+}
+.f_jumbo .header {
+  margin-left: 6.66em;
+  margin-right: 6.66em;
+  text-align: left;
+}
+.f_jumbo .header h1 span {
+  position: relative;
+}
+.f_jumbo .header h1 span:before {
+  content: "«";
+  position: absolute;
+  left: -0.52em;
+}
+.f_jumbo .header h1 span:after {
+  content: "»";
+}
+.f_jumbo .header p.f_lead {
+  width: 100%;
+  font-size: 1.16em;
+  color: #777777;
+}
+.f_jumbo .header ul li {
+  position: relative;
+  font-size: 1.5rem;
+}
+.f_jumbo .header ul li:not(:first-child) {
+  margin-top: 1.5rem;
+}
+.f_jumbo .header ul li:before {
+  position: absolute;
+  left: -1em;
+  content: "—";
+}
+.f_jumbo .header .f_anchor {
+  margin-top: 3.16em;
+}
+.f_three_steps_box {
+  padding-top: 18px;
+  padding-bottom: 45px;
+}
+.f_three_steps_box .image {
+  height: 205px;
+  background: url(../images/bg-chicken.jpg) repeat-x 50% 50%;
+  background-size: 620px 205px;
+}
+.f_three_steps_box .steps {
+  margin-top: 10px;
+}
+.f_three_steps_box .steps .step {
+  float: left;
+  width: 33.33%;
+}
+.f_three_steps_box .steps .step p {
+  width: 226px;
+  margin-bottom: 0;
+  font-family: "PT Serif", Georgia, Times, serif;
+  font-style: italic;
+  font-size: 1.111em;
+  color: #ffffff;
+  text-align: center;
+}
+.f_about_box {
+  margin-top: 70px;
+}
+.f_about_box .f_about {
+  width: 100%;
+}
