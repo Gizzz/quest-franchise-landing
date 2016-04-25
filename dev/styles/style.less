@@ -3600,7 +3600,7 @@ a.quest_list_box:hover h2 {
 }
 
 // ---------------------------------------------------------------------------------
-// Bulat Khusainov's CSS part starts here
+// CSS for "franchise abroad" page
 // ---------------------------------------------------------------------------------
 
 // Clearfix
@@ -3700,11 +3700,11 @@ a.quest_list_box:hover h2 {
     margin-top: 10px;
 
     .step {
+      position: relative;
       float: left;
       width: 33.33%;
 
       p {
-        width: 226px;
         margin-bottom: 0;
         font-family: "PT Serif", Georgia, Times, serif;
         font-style: italic;
@@ -3712,9 +3712,25 @@ a.quest_list_box:hover h2 {
         color: #ffffff;
         text-align: center;
       }
+
+      &:nth-child(1) .arrow {
+        position: absolute;
+        right: -30px;
+        top: 30px;
+        width: 75px;
+        height: 33px;
+        background: url(../images/fran-abr_arrow-first.svg);
+      }
+
+      &:nth-child(2) .arrow {
+        position: absolute;
+        right: -40px;
+        top: 30px;
+        width: 81px;
+        height: 34px;
+        background: url(../images/fran-abr_arrow-last.svg);
+      }
     }
-
-
   }
 }
 
@@ -3745,11 +3761,36 @@ a.quest_list_box:hover h2 {
         display: inline-block;
       }
 
-      div {
+      .text {
         position: relative;
         left: 1px;
-        top: -6px;
+        top: -2px;
         display: inline-block;
+        line-height: 1.3rem;
+      }
+
+      .flag {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 16px;
+        height: 9px;
+      }
+
+      &:nth-child(1) .flag {
+        background: url(../images/fran-abr_flag-1.jpg);
+      }
+
+      &:nth-child(2) .flag {
+        background: url(../images/fran-abr_flag-2.jpg);
+      }
+
+      &:nth-child(3) .flag {
+        background: url(../images/fran-abr_flag-3.jpg);
+      }
+
+      &:nth-child(4) .flag {
+        background: url(../images/fran-abr_flag-4.jpg);
       }
     }
   }
