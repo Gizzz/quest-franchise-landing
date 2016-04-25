@@ -3771,8 +3771,8 @@ a.quest_list_box:hover h2 {
 
       .flag {
         position: absolute;
-        right: 0;
-        top: 0;
+        right: 20px;
+        top: 19px;
         width: 16px;
         height: 9px;
       }
@@ -4021,6 +4021,7 @@ a.quest_list_box:hover h2 {
       }
 
       .col {
+        position: relative;
         width: 320px;
 
         h3 {
@@ -4034,6 +4035,21 @@ a.quest_list_box:hover h2 {
           margin-top: 6px;
           margin-bottom: 0;
           line-height: 1.33rem;
+        }
+
+        &:not(:last-child):after {
+          content: '';
+          display: block;
+          position: absolute;
+          right: 25px;
+          top: 50px;
+          width: 24px;
+          height: 80px;
+          background: url(../images/fran-abr_arrow-head.png);
+        }
+
+        &:nth-child(2):after {
+          right: 20px;
         }
       }
     }
