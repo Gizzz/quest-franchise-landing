@@ -3128,8 +3128,18 @@ a.quest_list_box:hover h2 {
   position: relative;
   display: block;
   float: left;
-  width: 190px;
   padding-right: 0;
+}
+.f_about_box ul li:nth-child(1) {
+  width: 190px;
+}
+.f_about_box ul li:nth-child(2),
+.f_about_box ul li:nth-child(3),
+.f_about_box ul li:nth-child(4) {
+  width: 205px;
+}
+.f_about_box ul li:nth-child(5) {
+  width: 155px;
 }
 .f_about_box ul li span {
   display: inline-block;
@@ -3143,21 +3153,25 @@ a.quest_list_box:hover h2 {
 }
 .f_about_box ul li .flag {
   position: absolute;
-  right: 20px;
+  right: 31px;
   top: 19px;
   width: 16px;
   height: 9px;
 }
 .f_about_box ul li:nth-child(1) .flag {
+  right: 31px;
   background: url(../images/fran-abr_flag-1.jpg);
 }
 .f_about_box ul li:nth-child(2) .flag {
+  right: 20px;
   background: url(../images/fran-abr_flag-2.jpg);
 }
 .f_about_box ul li:nth-child(3) .flag {
+  right: 25px;
   background: url(../images/fran-abr_flag-3.jpg);
 }
 .f_about_box ul li:nth-child(4) .flag {
+  right: 22px;
   background: url(../images/fran-abr_flag-4.jpg);
 }
 .f_about_box .f_boss_box {
@@ -3291,22 +3305,30 @@ a.quest_list_box:hover h2 {
 .f_scenarios .content .row:not(:first-child) {
   margin-top: 25px;
 }
-.f_scenarios .content .row .col {
+.f_scenarios .content .row.videos .col {
   width: 460px;
 }
-.f_scenarios .content .row .col:first-child {
+.f_scenarios .content .row.videos .col:first-child {
   margin-right: 40px;
 }
-.f_scenarios .content .row .col p {
+.f_scenarios .content .row.text .col {
+  width: 320px;
+}
+.f_scenarios .content .row.text .col p {
   margin-top: 13px;
   margin-bottom: 0;
   line-height: 1.55rem;
 }
-.f_scenarios .content .row.text .col {
-  width: 300px;
+.f_scenarios .content .row.text .col:nth-child(1) p {
+  width: 297px;
 }
-.f_scenarios .content .row.text .col:not(:last-child) {
-  margin-right: 30px;
+.f_scenarios .content .row.text .col:nth-child(2) p {
+  margin-left: 32px;
+  width: 291px;
+}
+.f_scenarios .content .row.text .col:nth-child(3) p {
+  margin-left: 37px;
+  width: 291px;
 }
 .f_what-you-get {
   margin-top: 78px;
@@ -3353,18 +3375,21 @@ a.quest_list_box:hover h2 {
   margin-bottom: 0;
   line-height: 1.55rem;
 }
+.f_what-you-get .content .row .col:nth-child(2) {
+  left: 20px;
+}
+.f_what-you-get .content .row .col:nth-child(3) {
+  left: 40px;
+}
 .f_what-you-get .content .row .col:not(:last-child):after {
   content: '';
   display: block;
   position: absolute;
-  right: 25px;
+  right: 8px;
   top: 50px;
   width: 24px;
   height: 80px;
   background: url(../images/fran-abr_arrow-head.png);
-}
-.f_what-you-get .content .row .col:nth-child(2):after {
-  right: 20px;
 }
 .f_feedback_box {
   zoom: 1;
