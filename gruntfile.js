@@ -9,9 +9,9 @@ module.exports = function (grunt) {
 			task: {
 				options: {
 					paths: ["dev/styles"],
-					// cssmin remove soucemap in "prod" version
-					// sourceMap: true,
-					// sourceMapFileInline: true,
+						// cssmin remove soucemap in "prod" version
+					  sourceMap: true,
+					  sourceMapFileInline: true,
 				},
 				src: 'dev/styles/style.less',
 				dest: 'dev/styles/style.css'
