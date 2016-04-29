@@ -3634,9 +3634,20 @@ a.quest_list_box:hover h2 {
   }
 }
 
+[class^="f_"] {
+  .title,
+  .content {
+    width: auto;
+    max-width: 960px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
 .f_jumbo {
   background: url(../images/fran-abr_stock-vector-hot-air-balloon.png) no-repeat right 3.33rem top 50%;
   background-size: 272px 510px;
+  text-align: center;
 
   .header {
     margin-left: 12.5%;
@@ -3679,10 +3690,10 @@ a.quest_list_box:hover h2 {
         }
       }
     }
+  }
 
-    .f_anchor {
-      margin-top: 3.16em;
-    }
+  .f_anchor {
+    margin-top: 3.16em;
   }
 }
 
@@ -3875,10 +3886,6 @@ a.quest_list_box:hover h2 {
   margin-top: 67px;
 
   .title {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-
     h2 {
       margin-bottom: 0;
       color: #ffffff;
@@ -3887,15 +3894,12 @@ a.quest_list_box:hover h2 {
   }
 
   .content {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 29px;
     padding-top: 0;
 
     img {
-      width: 960px;
-      height: 350px;
+      width: 100%;
+      height: auto;
     }
 
     .row {
@@ -3925,7 +3929,7 @@ a.quest_list_box:hover h2 {
       margin-top: 85px;
       margin-right: auto;
       margin-left: auto;
-      width: 723px;
+      max-width: 723px;
       font-family: "PT Serif", Georgia, Times, serif;
       font-size: 1.33rem;
       line-height: 1.83rem;
@@ -3946,20 +3950,18 @@ a.quest_list_box:hover h2 {
 }
 
 .f_scenarios {
-  width: 1042px;
+  max-width: 1042px;
   margin-right: auto;
   margin-left: auto;
   margin-top: 77px;
   padding-top: 40px;
   padding-bottom: 45px;
+  padding-left: 40px;
+  padding-right: 40px;
   border: 3px solid #6E3C19;
   border-radius: 6px;
 
   .title {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
-
     h2 {
       margin-bottom: 0;
       color: #ffffff;
@@ -3968,9 +3970,6 @@ a.quest_list_box:hover h2 {
   }
 
   .content {
-    width: 960px;
-    margin-right: auto;
-    margin-left: auto;
     margin-top: 58px;
     padding-top: 0;
 
@@ -3980,10 +3979,11 @@ a.quest_list_box:hover h2 {
       }
 
       &.videos .col {
-        width: 460px;
+        width: 48%;
+        max-width: 460px;
 
-        &:first-child {
-          margin-right: 40px;
+        &:last-child {
+          float: right;
         }
       }
 
@@ -4179,6 +4179,23 @@ a.quest_list_box:hover h2 {
       }
     }
   }
+
+  .f_scenarios {
+    .content {
+      .row.text {
+        .col {
+          width: 100%;
+
+          p:nth-child(1),
+          p:nth-child(2),
+          p:nth-child(3) {
+            width: 100%;
+            margin-left: 0;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -4205,6 +4222,17 @@ a.quest_list_box:hover h2 {
       .step {
         p {
           font-size: .83rem;
+        }
+      }
+    }
+  }
+
+  .f_less-budget {
+    .content {
+      .row {
+        .col:first-child,
+        .col:last-child {
+          width: 100%;
         }
       }
     }
