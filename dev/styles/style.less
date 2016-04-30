@@ -4153,9 +4153,13 @@ a.quest_list_box:hover h2 {
 @media screen and (max-width: 1250px) {
   [class^="f_"] {
     .title,
-    .image-box{
+    .image-box {
       width: 90%;
     }
+  }
+
+  .f_feedback_box {
+    width: 90%;
   }
 
   .f_jumbo {
@@ -4236,6 +4240,20 @@ a.quest_list_box:hover h2 {
       }
     }
   }
+
+  .f_feedback_box {
+    .f_feedback {
+      width: 100%;
+
+      &:not(:first-of-type) {
+        margin-top: 35px;
+      }
+
+      .text {
+        width: 100%;
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 980px) {
@@ -4274,20 +4292,6 @@ a.quest_list_box:hover h2 {
         .col:last-child {
           width: 100%;
         }
-      }
-    }
-  }
-
-  .f_feedback_box {
-    .f_feedback {
-      width: 100%;
-
-      &:not(:first-of-type) {
-        margin-top: 35px;
-      }
-
-      .text {
-        width: 100%;
       }
     }
   }
@@ -4330,6 +4334,21 @@ a.quest_list_box:hover h2 {
       }
     }
   }
+
+  .f_what-you-get {
+    .content {
+      .row {
+        .col {
+          width: 100%;
+
+          h3,
+          p {
+            width: 100%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @media screen and (max-width: 640px) {
@@ -4337,6 +4356,24 @@ a.quest_list_box:hover h2 {
     .header {
       h1 {
         font-size: 1.5em;
+      }
+    }
+  }
+
+  .f_about_box {
+    ul {
+      li {
+        &:nth-child(1),
+        &:nth-child(2),
+        &:nth-child(3),
+        &:nth-child(4),
+        &:nth-child(5) {
+          width: 50%;
+        }
+
+        .flag {
+          display: none;
+        }
       }
     }
   }
@@ -4374,7 +4411,15 @@ a.quest_list_box:hover h2 {
   }
 
   .f_scenarios {
+    .title {
+      h2 {
+        font-size: 1.2rem;
+      }
+    }
+
     .content {
+      margin-top: 40px;
+
       .row.videos {
         .col {
           &:nth-child(1) {
@@ -4385,6 +4430,33 @@ a.quest_list_box:hover h2 {
 
           &:nth-child(2) {
             display: none;
+          }
+        }
+      }
+    }
+  }
+
+  //.f_what-you-get {
+  //  .content {
+  //    .row {
+  //      .col {
+  //        &:after {
+  //          display: block;
+  //        }
+  //      }
+  //    }
+  //  }
+  //}
+
+  .f_feedback_box {
+    .f_feedback {
+      .row {
+        .col {
+          width: 100%;
+
+          &:nth-child(2) {
+            margin-left: 0;
+            margin-top: 10px;
           }
         }
       }
