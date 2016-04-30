@@ -3636,7 +3636,8 @@ a.quest_list_box:hover h2 {
 
 [class^="f_"] {
   .title,
-  .content {
+  .content,
+  .image-box {
     width: auto;
     max-width: 960px;
     margin-right: auto;
@@ -3887,14 +3888,17 @@ a.quest_list_box:hover h2 {
     }
   }
 
-  .content {
+  .image-box {
     margin-top: 29px;
-    padding-top: 0;
 
     img {
       width: 100%;
       height: auto;
     }
+  }
+
+  .content {
+    padding-top: 0;
 
     .row {
       &:not(:first-of-type) {
@@ -4148,7 +4152,8 @@ a.quest_list_box:hover h2 {
 // breakpoint where layout starts to shrink
 @media screen and (max-width: 1250px) {
   [class^="f_"] {
-    .title{
+    .title,
+    .image-box{
       width: 90%;
     }
   }
@@ -4336,8 +4341,6 @@ a.quest_list_box:hover h2 {
     }
   }
 
-
-
   .f_experience_abroad {
     .content {
       .row {
@@ -4361,6 +4364,12 @@ a.quest_list_box:hover h2 {
           }
         }
       }
+    }
+  }
+
+  .f_less-budget {
+    .image-box {
+      width: 100%;
     }
   }
 
