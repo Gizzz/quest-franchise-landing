@@ -4176,12 +4176,24 @@ a.quest_list_box:hover h2 {
     }
   }
 
-  .f_feedback_box {
-    width: 90%;
-  }
-
   .f_jumbo {
-    background: none;
+    background-position: right 3.33rem top 20px;
+
+    .header {
+      h1 {
+        font-size: 2.5em;
+      }
+
+      p.f_lead {
+        font-size: 1em;
+      }
+
+      ul {
+        li {
+          font-size: 1.125rem;
+        }
+      }
+    }
 
     .button-box {
       width: 80%;
@@ -4265,6 +4277,8 @@ a.quest_list_box:hover h2 {
   }
 
   .f_feedback_box {
+    width: 90%;
+
     .f_feedback {
       width: 100%;
 
@@ -4280,19 +4294,27 @@ a.quest_list_box:hover h2 {
   }
 }
 
+@media screen and (max-width: 1024px) {
+  .f_jumbo {
+    background-size: 204px 382px;
+  }
+}
+
 @media screen and (max-width: 980px) {
   .f_jumbo {
-    .header {
-      p.f_lead {
-        font-size: 1em;
-      }
+    background: none;
 
-      ul {
-        li {
-          font-size: 1.125rem;
-        }
-      }
-    }
+    //.header {
+    //  p.f_lead {
+    //    font-size: 1em;
+    //  }
+    //
+    //  ul {
+    //    li {
+    //      font-size: 1.125rem;
+    //    }
+    //  }
+    //}
   }
 
   .f_three_steps_box {
@@ -4379,15 +4401,6 @@ a.quest_list_box:hover h2 {
           p {
             width: 100%;
           }
-
-          //.fa,
-          //&:nth-child(3) .fa {
-          //  display: block;
-          //  right: 50%;
-          //  top: auto;
-          //  bottom: -73px;
-          //  transform: rotate(90deg) translateX(-50%);
-          //}
         }
       }
     }
