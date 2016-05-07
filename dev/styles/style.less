@@ -3937,7 +3937,7 @@ a.quest_list_box:hover h2 {
     }
 
     h3 {
-      margin-top: 50px;
+      margin-top: 40px;
       margin-right: auto;
       margin-left: auto;
       max-width: 723px;
@@ -3989,8 +3989,21 @@ a.quest_list_box:hover h2 {
       }
 
       &.videos .col {
+        position: relative;
         width: 48%;
-        max-width: 460px;
+        height: 0;
+        overflow: hidden;
+        padding-bottom: 26.95%;
+        background: url(../images/loader.gif) center center no-repeat;
+        outline: 1px solid #333;
+
+        iframe {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+        }
 
         &:last-child {
           float: right;
@@ -4235,6 +4248,18 @@ a.quest_list_box:hover h2 {
     .image-box {
       width: 90%;
     }
+
+    .content {
+      .row {
+        .col:nth-child(1) {
+          width: 49.6%;
+        }
+
+        .col:nth-child(2) {
+          width: 43.5%;
+        }
+      }
+    }
   }
 
   .f_scenarios {
@@ -4245,13 +4270,20 @@ a.quest_list_box:hover h2 {
     .content {
       .row.text {
         .col {
-          width: 100%;
+          width: 33.3%;
 
-          p:nth-child(1),
-          p:nth-child(2),
-          p:nth-child(3) {
-            width: 100%;
-            margin-left: 0;
+          &:nth-child(1) p {
+            width: 92.8%;
+          }
+
+          &:nth-child(2) p {
+            width: 90.9%;
+            margin-left: 10%;
+          }
+
+          &:nth-child(3) p {
+            width: 90.9%;
+            margin-left: 11.5%;
           }
         }
       }
@@ -4347,6 +4379,23 @@ a.quest_list_box:hover h2 {
         .col:first-child,
         .col:last-child {
           width: 100%;
+        }
+      }
+    }
+  }
+
+  .f_scenarios {
+    .content {
+      .row.text {
+        .col {
+          width: 100%;
+
+          p:nth-child(1),
+          p:nth-child(2),
+          p:nth-child(3) {
+            width: 100%;
+            margin-left: 0;
+          }
         }
       }
     }
@@ -4489,8 +4538,7 @@ a.quest_list_box:hover h2 {
         .col {
           &:nth-child(1) {
             width: 100%;
-            max-width: none;
-            height: auto;
+            padding-bottom: 56.25%;
           }
 
           &:nth-child(2) {
