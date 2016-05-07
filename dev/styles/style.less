@@ -4296,11 +4296,48 @@ a.quest_list_box:hover h2 {
 
       .row {
         .col {
-          &:nth-child(n) {
-            left: 0;
+          position: relative;
+          margin-top: 24px;
+          //width: 320px;
+          width: 33.33%;
+
+          &:nth-child(3n + 2) {
+            //left: 20px;
+            left: 2.08%;
+          }
+
+          &:nth-child(3n + 3) {
+            //left: 40px;
+            left: 4.16%;
+          }
+
+          h3 {
+            margin-bottom: 5px;
+            //width: 302px;
+            width: 94.38%;
+            color: #ff8014;
+            font-weight: bold;
+          }
+
+          p {
+            //width: 281px;
+            width: 87.81%;
+            margin-top: 6px;
+            margin-bottom: 0;
+            line-height: 1.55rem;
           }
 
           .fa {
+            position: absolute;
+            right: -3px;
+            top: 83px;
+            width: 24px;
+            height: 80px;
+            color: #ff8014;
+          }
+
+          &:nth-child(3) .fa,
+          &:nth-child(6) .fa {
             display: none;
           }
         }
@@ -4395,6 +4432,24 @@ a.quest_list_box:hover h2 {
           p:nth-child(3) {
             width: 100%;
             margin-left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .f_what-you-get {
+    .content {
+      .row {
+        .col {
+          width: 320px;
+
+          &:nth-child(n) {
+            left: 0;
+          }
+
+          .fa {
+            display: none;
           }
         }
       }
